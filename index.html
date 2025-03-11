@@ -10,7 +10,7 @@
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="FES" />
+        <img class="logo" src="./assets/FES.svg" alt="FES" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -19,55 +19,63 @@
       </nav>
     </section>
     <header>
-      <div>
+      <div class="row">
+        <div>
         <h1>Best place to learn Frontend</h1>
-        <p>Go from absolute beginner to pro with a simplified process</p>
+        <p class ="subheader">Go from absolute beginner to pro with a simplified process</p>
         <button>Start Learning</button>
       </div>
       <figure>
-        <img src="./assets/laptop.png" alt="laptop" />
+        <img class="header" src="./assets/laptop.png" alt="laptop" />
       </figure>
+      </div>
     </header>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
+        <div class="row">
+        <div class ="section__description">
+        <div class="section__description--wrapper">
+          <p class ="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio
             tempore sint magni distinctio reprehenderit illo maxime neque
             consectetur facere? Impedit necessitatibus nisi ea, sunt quo
             provident deserunt adipisci in.
           </p>
-          <p>
+          <p class ="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio
             tempore sint magni distinctio reprehenderit illo maxime neque
             consectetur facere? Impedit necessitatibus nisi ea, sunt quo
             provident deserunt adipisci in.
           </p>
         </div>
-        <figure>
+        <figure class="about__image--wrapper">
           <img src="./assets/about.jpg" alt="about" />
         </figure>
+      </div>
+        </div>  
       </section>
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
+        <div class ="section__description">
+        <figure class="about__image--wrapper">
           <img src="./assets/discord.png" alt="about" />
         </figure>
-        <div>
-          <p>
+        <div class="section__description--wrapper">
+          <p class ="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio
             tempore sint magni distinctio reprehenderit illo maxime neque
             consectetur facere? Impedit necessitatibus nisi ea, sunt quo
             provident deserunt adipisci in.
           </p>
-          <p>
+          <p class ="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio
             tempore sint magni distinctio reprehenderit illo maxime neque
             consectetur facere? Impedit necessitatibus nisi ea, sunt quo
             provident deserunt adipisci in.
           </p>
         </div>
+      </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
@@ -80,17 +88,19 @@
         </form>
       </section>
     </main>
-    <footer>
-      <figure>  
-        <img src="./assets/FES.svg" alt="FES" />
-      </figure>  
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#discord">Discord</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href>Courses</a></li>
 
+    <footer>
+      <figure class = "footer__logo">  
+        <img  src="./assets/FES.svg" alt="FES" />
+      </figure> 
+      <div class="footer__wrapper"> 
+      <ul>
+        <li class = "footer__link"><a href="#about">About</a></li>
+        <li class = "footer__link"><a href="#discord">Discord</a></li>
+        <li class = "footer__link"><a href="#contact">Contact</a></li>
+        <li class = "footer__link"><a href>Courses</a></li>
       </ul>
+      </div>
       <p>© 2025 Copyright Front End Simplified</p>
   </body>
 </html>
